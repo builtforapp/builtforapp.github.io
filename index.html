@@ -1,0 +1,789 @@
+<head>
+    <title>포트폴리오</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /*doyoutuch*/
+        @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+
+
+        <style>.image fit {
+            background-image: url(images/images%20(2).jfif);
+        }
+
+        .container {
+            width: 500px;
+            display: block;
+            margin: 50px auto;
+        }
+
+        .progress {
+            overflow: hidden;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 100%;
+            color: #fff;
+            text-align: center;
+            background-color: #ee303c;
+        }
+
+        .progress-striped .progress-bar {
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+            background-size: 40px 40px;
+        }
+
+        .progress.active .progress-bar {
+            -webkit-animation: progress-bar-stripes 2s linear infinite;
+            animation: progress-bar-stripes 2s linear infinite;
+            -moz-animation: progress-bar-stripes 2s linear infinite;
+        }
+
+        #per40 {
+            width: 0;
+            animation: per40 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes per40 {
+            100% {
+                width: 40%;
+            }
+        }
+
+        #per80 {
+            width: 0;
+            animation: per80 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes per80 {
+            100% {
+                width: 80%;
+            }
+        }
+
+    </style>
+    <style>
+        /*img*/
+        .gallery img {
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+
+        .gallery img:hover {
+            -webkit-filter: blur(0);
+            filter: blur(0);
+        }
+
+    </style>
+    <style>
+        /*text*/
+        .stroke {
+            stroke: #c36;
+            stroke-width: 1px;
+            stroke-dasharray: 0 250;
+            stroke-opacity: 1;
+            fill: none;
+            animation: stroke_offset 8s infinite;
+            animation-timing-function: cubic-bezier(.25, .46, .45, .94);
+        }
+
+        @keyframes stroke_offset {
+
+            100%,
+            25% {
+                stroke-dasharray: 0 250;
+                stroke-opacity: 1
+            }
+
+            50%,
+            75% {
+                stroke-dasharray: 250 0;
+                stroke-opacity: 0.75
+            }
+
+            55%,
+            70% {
+                stroke-dasharray: 250 0;
+                stroke-opacity: 0
+            }
+        }
+
+        .fill {
+            fill: #c36;
+            fill-opacity: 0;
+            animation: fill_offset 8s infinite;
+            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        @keyframes fill_offset {
+
+            100%,
+            25%,
+            35%,
+            90% {
+                fill-opacity: 0
+            }
+
+            50%,
+            70% {
+                fill-opacity: 1
+            }
+        }
+
+        #fade-text {
+            font-family: 'Alex Brush', cursive;
+            font-size: 4em
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+
+    </style>
+    <!--grow-->
+    <style>
+        $defaultDuration: .3s;
+        $primaryColour: #ececec;
+        $secondaryColour: #666;
+        $shadowColour: rgba(0, 0, 0, .6);
+
+        @mixin hideTapHighlightColor() {
+
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        @mixin hardwareAccel() {
+
+            transform: translateZ(0);
+        }
+
+        @mixin improveAntiAlias() {
+
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        }
+
+        #grow {
+            display: inline-block;
+            transition-duration: $defaultDuration;
+            transition-property: transform;
+
+            @include hideTapHighlightColor();
+            @include hardwareAccel();
+            @include improveAntiAlias();
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        }
+
+    </style>
+    <style>
+        .text p {
+            color: palegoldenrod;
+        }
+
+        .text h1 {
+            position: relative;
+            font-size: 5em;
+            color: palegoldenrod;
+            letter-spacing: 0.0625em;
+            animation: drop-shadows;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        @keyframes drop-shadows {
+            0% {
+                text-shadow: -1px 0 0 cadetblue, 0px 0 0 #5b989a, 0px 0 0 #5d9b9d, 0px 0 0 cadetblue;
+            }
+
+            25% {
+                text-shadow: -1px 0 0 cadetblue, -2px 0 0 #5b989a, -3px 0 0 #599596, -4px 0 0 #579193, -5px 0 0 #568e90, -6px 0 0 #548b8d, -7px 0 0 #52888a, -8px 0 0 #508586, -9px 0 0 #4e8283, -10px 0 0 #4c7e80, -11px 0 0 #4a7b7d, -12px 0 0 #48787a, -13px 0 0 #467576, -14px 0 0 #447273, -15px 0 0 #436f70, -16px 0 0 #416b6d, -17px 0 0 #3f686a, -18px 0 0 #3d6566, -19px 0 0 #3b6263, -20px 0 0 #395f60, -21px 0 0 #375c5d, -22px 0 0 #35585a, -23px 0 0 #335556, -24px 0 0 #315253, -25px 0 0 #304f50, -26px 0 0 #2e4c4d, -27px 0 0 #2c494a, -28px 0 0 #2a4646, -29px 0 0 #284243, -30px 0 0 #263f40;
+                transform: rotateY(25deg);
+            }
+
+            75% {
+                text-shadow: -1px 0 0 cadetblue, 2px 0 0 #5b989a, 3px 0 0 #599596, 4px 0 0 #579193, 5px 0 0 #568e90, 6px 0 0 #548b8d, 7px 0 0 #52888a, 8px 0 0 #508586, 9px 0 0 #4e8283, 10px 0 0 #4c7e80, 11px 0 0 #4a7b7d, 12px 0 0 #48787a, 13px 0 0 #467576, 14px 0 0 #447273, 15px 0 0 #436f70, 16px 0 0 #416b6d, 17px 0 0 #3f686a, 18px 0 0 #3d6566, 19px 0 0 #3b6263, 20px 0 0 #395f60, 21px 0 0 #375c5d, 22px 0 0 #35585a, 23px 0 0 #335556, 24px 0 0 #315253, 25px 0 0 #304f50, 26px 0 0 #2e4c4d, 27px 0 0 #2c494a, 28px 0 0 #2a4646, 29px 0 0 #284243, 30px 0 0 #263f40;
+                transform: rotateY(-25deg);
+            }
+
+            100% {
+                text-shadow: -1px 0 0 cadetblue, 0px 0 0 #5b989a, 0px 0 0 #5d9b9d, 0px 0 0 cadetblue;
+                transform: rotateY(0deg);
+            }
+        }
+
+    </style>
+    <style>
+
+    </style>
+    <!--여기부터 -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=발급받은api키"></script> -->
+    <!--  https://cloud.google.com/maps-platform/ 에서 개발 api키 발급받으세요 -->
+    <script>
+        //좌표 값을 바꿔서 입력 36.3491563,127.3776857
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(36.329923, 127.443575);
+            var mapOptions = {
+                zoom: 17,
+                center: myLatlng
+            }
+            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: '주소' //레이블을 바꿔서 입력
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    <style>
+        body {
+            background-color: #EEE;
+            font-family: Roboto;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+
+        .header .title {
+            color: #5d5d5d;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .content {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: 1100px) {
+            .content {
+                justify-content: space-around;
+            }
+        }
+
+        .group {
+            margin: 10px;
+        }
+
+        .group .circular-progress60 {
+            background: linear-gradient(90deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(126deg, #FF70A6 50%, #E0E0E0 50%, #E0E0E0);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            height: 150px;
+            margin: 2em auto;
+            position: relative;
+            min-width: 150px;
+            margin: 10px;
+            transition: all .3s linear;
+        }
+
+        .group .circular-progress60::before {
+            background-color: #FAFAFA;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            color: rgba(0, 0, 0, 0.54);
+            content: "10%";
+            font-size: 60px;
+            font-weight: bold;
+            height: 100%;
+            left: 0;
+            line-height: 150px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+            width: 100%;
+        }
+
+        .group .circular-progress60:hover {
+            box-shadow: 0 0 100px 1px rgba(255, 214, 112, 0.35);
+        }
+
+        .group .circular-progress73 {
+            background: linear-gradient(-7.2deg, #FF9770 50%, transparent 50%, transparent), linear-gradient(270deg, #FF9770 50%, #E0E0E0 50%, #E0E0E0);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            height: 200px;
+            margin: 2em auto;
+            position: relative;
+            min-width: 200px;
+            margin: 10px;
+            transition: all .3s linear;
+        }
+
+        .group .circular-progress73::before {
+            background-color: #FAFAFA;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            color: rgba(0, 0, 0, 0.54);
+            content: "73%";
+            font-size: 60px;
+            font-weight: bold;
+            height: 100%;
+            left: 0;
+            line-height: 200px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+            width: 100%;
+        }
+
+        .group .circular-progress73:hover {
+            box-shadow: 0 0 100px 1px rgba(255, 214, 112, 0.35);
+        }
+
+        .group .circular-progress75 {
+            background: linear-gradient(0deg, #FF9770 50%, transparent 50%, transparent), linear-gradient(270deg, #FF9770 50%, #E0E0E0 50%, #E0E0E0);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            height: 150px;
+            margin: 2em auto;
+            position: relative;
+            min-width: 150px;
+            margin: 10px;
+            transition: all .3s linear;
+        }
+
+        .group .circular-progress75::before {
+            background-color: #FAFAFA;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            color: rgba(0, 0, 0, 0.54);
+            content: "75%";
+            font-size: 60px;
+            font-weight: bold;
+            height: 100%;
+            left: 0;
+            line-height: 150px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+            width: 100%;
+        }
+
+        .group .circular-progress75:hover {
+            box-shadow: 0 0 100px 1px rgba(255, 214, 112, 0.35);
+        }
+
+        .group .circular-progress85 {
+            background: linear-gradient(36deg, #70D6FF 50%, transparent 50%, transparent), linear-gradient(270deg, #70D6FF 50%, #E0E0E0 50%, #E0E0E0);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            height: 150px;
+            margin: 2em auto;
+            position: relative;
+            min-width: 150px;
+            margin: 10px;
+            transition: all .3s linear;
+        }
+
+        .group .circular-progress85::before {
+            background-color: #FAFAFA;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            color: rgba(0, 0, 0, 0.54);
+            content: "85%";
+            font-size: 60px;
+            font-weight: bold;
+            height: 100%;
+            left: 0;
+            line-height: 150px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+            width: 100%;
+        }
+
+        .group .circular-progress85:hover {
+            box-shadow: 0 0 100px 1px rgba(255, 214, 112, 0.35);
+        }
+
+        .group .circular-progress90 {
+            background: linear-gradient(54deg, #70D6FF 50%, transparent 50%, transparent), linear-gradient(270deg, #70D6FF 50%, #E0E0E0 50%, #E0E0E0);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            height: 150px;
+            margin: 2em auto;
+            position: relative;
+            min-width: 150px;
+            margin: 10px;
+            transition: all .3s linear;
+        }
+
+        .group .circular-progress90::before {
+            background-color: #FAFAFA;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            color: rgba(0, 0, 0, 0.54);
+            content: "90%";
+            font-size: 60px;
+            font-weight: bold;
+            height: 100%;
+            left: 0;
+            line-height: 150px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+            width: 100%;
+        }
+
+        .group .circular-progress90:hover {
+            box-shadow: 0 0 100px 1px rgba(255, 214, 112, 0.35);
+        }
+
+        .group .circular-progress100 {
+            background: linear-gradient(90deg, #C8E9A0 50%, transparent 50%, transparent), linear-gradient(270deg, #C8E9A0 50%, #E0E0E0 50%, #E0E0E0);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            height: 150px;
+            margin: 2em auto;
+            position: relative;
+            min-width: 150px;
+            margin: 10px;
+            transition: all .3s linear;
+        }
+
+        .group .circular-progress100::before {
+            background-color: #FAFAFA;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            color: rgba(0, 0, 0, 0.54);
+            content: "100%";
+            font-size: 60px;
+            font-weight: bold;
+            height: 100%;
+            left: 0;
+            line-height: 150px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            transform: scale(0.87);
+            width: 100%;
+        }
+
+        .group .circular-progress100:hover {
+            box-shadow: 0 0 100px 1px rgba(255, 214, 112, 0.35);
+        }
+
+        .group .circular-text {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        #footer {
+            margin-top: 30px;
+        }
+
+        @keyframes turning_cw {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+    <!--4html 스킬효과-->
+    <style>
+        .progress {
+            border-radius: 0;
+            overflow: visible;
+        }
+
+        .progress-bar {
+            background: rgb(23, 44, 60);
+            -webkit-transition: width 1.5s ease-in-out;
+            transition: width 1.5s ease-in-out;
+        }
+
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip({
+                trigger: 'manual'
+            }).tooltip('show');
+        });
+        $(document).ready(function() {
+            $(".progress-bar").each(function() {
+                each_bar_width = $(this).attr('aria-valuenow');
+                $(this).width(each_bar_width + '%');
+            });
+        });
+
+        // $( window ).scroll(function() {   
+        // if($( window ).scrollTop() > 10){  // scroll down abit and get the action   
+        //      $(".progress-bar").each(function(){
+        //        each_bar_width = $(this).attr('aria-valuenow');
+        //        $(this).width(each_bar_width + '%');
+        //      });
+
+        //  }  
+        // });
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="index.html">이름 <span>포트폴리오</span></a></div>
+        <a href="#menu">Menu</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">능력</a></li>
+            <li><a href="#">갤러리</a></li>
+            <li><a href="#">주소</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner full">
+        <article>
+            <img src="images/slide01.jpg" alt="" />
+            <div class="inner">
+                <div class="text">
+                    <h1>이의 포트폴리오</h1>
+
+                </div>
+            </div>
+        </article>
+        <article>
+            <img src="images/slide02.jpg" alt="" />
+            <div class="inner">
+                <header>
+                    <div class="container">
+                        <div class="drawsvg">
+                            <svg version="1.1" viewBox="0 0 700 300">
+                                <symbol id="fade-text">
+                                    <text x="45%" y="40%" text-anchor="middle">Introduce</text>
+                                    <text x="55%" y="60%" text-anchor="middle">to html,css</text>
+                                </symbol>
+                                <g>
+                                    <use class="stroke" xlink:href="#fade-text" />
+                                    <use class="fill" xlink:href="#fade-text" />
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                </header>
+            </div>
+        </article>
+        <article>
+            <img src="images/slide03.jpg" alt="" />
+            <div class="inner">
+                <header>
+                    <div class="container">
+                        <div class="con">
+                            <h4>html</h4>
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="per40">
+                                    <span>40% Complete </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </header>
+            </div>
+        </article>
+        <article>
+            <img src="images/slide04.jpg" alt="" />
+            <div class="inner">
+                <header>
+                    <div class="container">
+
+                        <div class="con">
+                            <h4>css</h4>
+
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="per40">
+                                    <span>40% Complete </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </article>
+        <article>
+            <img src="images/slide05.jpg" alt="" />
+            <div class="inner">
+                <header>
+                    <div class="container">
+                        <div class="con">
+                            <h4>html</h4>
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="per40">
+                                    <span>40% Complete </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </article>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style2">
+        <div class="inner">
+            <div class="grid-style">
+
+                <div>
+                    <div class="box">
+                        <div class="image fit">
+                            <bagroud-img src="images/pic02.jpg" alt="" />
+
+                            <div class="content" id="content">
+
+                                <div class="content_wrap">
+                                    <section class="row" id="contact">
+                                        <h2 class="sub_title1">CONTACT</h2>
+                                        <article class="full_col h600" style="margin-bottom:50px;">
+                                            <!-- API 지도 삽입 -->
+                                            <div id="map_canvas" style="width:500px; height:300px"></div>
+                                        </article>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="box">
+                        <div class="image fit">
+                            <p>사용가능한 프로그램 <br></p>
+                        </div>
+                        <div class="content">
+                            <header class="align-center">
+                                
+                            </header>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style3">
+        <div class="inner">
+            <header class="align-center">
+            </header>
+        </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper style2">
+        <div class="inner">
+            <header class="align-center">
+                <!--dd-->
+                <div class="wrapper">
+                    <h3 align="center"><a href="#" class="effect-underline">갤러리</a></h3>
+
+                </div>
+                <div class="gallery">
+                    <div>
+                        <div class="image fit">
+                            <a href="#"><img src="images/123.png" alt="" /></a>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image fit">
+                            <a href="#"><img src="images/1234.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image fit">
+                            <a href="#"><img src="images/t.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image fit">
+                            <a href="#"><img src="images/slide03.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy;
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
