@@ -1,256 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>포트폴리오</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <title></title>]
     <style>
-        /*doyoutuch*/
-        @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
-
-
-        <style>.image fit {
-            background-image: url(images/images%20(2).jfif);
-        }
-
-        .container {
-            width: 500px;
-            display: block;
-            margin: 50px auto;
-        }
-
-        .progress {
-            overflow: hidden;
-            height: 20px;
-            background-color: #ccc;
-            border-radius: 4px;
-            -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-            margin-bottom: 20px;
-        }
-
-        .progress-bar {
-            width: 0;
-            height: 100%;
-            color: #fff;
-            text-align: center;
-            background-color: #ee303c;
-        }
-
-        .progress-striped .progress-bar {
-            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-            background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-            background-size: 40px 40px;
-        }
-
-        .progress.active .progress-bar {
-            -webkit-animation: progress-bar-stripes 2s linear infinite;
-            animation: progress-bar-stripes 2s linear infinite;
-            -moz-animation: progress-bar-stripes 2s linear infinite;
-        }
-
-        #per40 {
-            width: 0;
-            animation: per40 1s;
-            animation-fill-mode: both;
-        }
-
-        @keyframes per40 {
-            100% {
-                width: 40%;
-            }
-        }
-
-        #per80 {
-            width: 0;
-            animation: per80 2s;
-            animation-fill-mode: both;
-        }
-
-        @keyframes per80 {
-            100% {
-                width: 80%;
-            }
-        }
-
-    </style>
-    <style>
-        /*img*/
-        .gallery img {
-            -webkit-filter: blur(2px);
-            filter: blur(2px);
-        }
-
-        .gallery img:hover {
-            -webkit-filter: blur(0);
-            filter: blur(0);
-        }
-
-    </style>
-    <style>
-        /*text*/
-        .stroke {
-            stroke: #c36;
-            stroke-width: 1px;
-            stroke-dasharray: 0 250;
-            stroke-opacity: 1;
-            fill: none;
-            animation: stroke_offset 8s infinite;
-            animation-timing-function: cubic-bezier(.25, .46, .45, .94);
-        }
-
-        @keyframes stroke_offset {
-
-            100%,
-            25% {
-                stroke-dasharray: 0 250;
-                stroke-opacity: 1
-            }
-
-            50%,
-            75% {
-                stroke-dasharray: 250 0;
-                stroke-opacity: 0.75
-            }
-
-            55%,
-            70% {
-                stroke-dasharray: 250 0;
-                stroke-opacity: 0
-            }
-        }
-
-        .fill {
-            fill: #c36;
-            fill-opacity: 0;
-            animation: fill_offset 8s infinite;
-            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        @keyframes fill_offset {
-
-            100%,
-            25%,
-            35%,
-            90% {
-                fill-opacity: 0
-            }
-
-            50%,
-            70% {
-                fill-opacity: 1
-            }
-        }
-
-        #fade-text {
-            font-family: 'Alex Brush', cursive;
-            font-size: 4em
-        }
-
-        @import url(https://fonts.googleapis.com/css?family=Alex+Brush);
-
-    </style>
-    <!--grow-->
-    <style>
-        $defaultDuration: .3s;
-        $primaryColour: #ececec;
-        $secondaryColour: #666;
-        $shadowColour: rgba(0, 0, 0, .6);
-
-        @mixin hideTapHighlightColor() {
-
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-
-        @mixin hardwareAccel() {
-
-            transform: translateZ(0);
-        }
-
-        @mixin improveAntiAlias() {
-
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        }
-
-        #grow {
-            display: inline-block;
-            transition-duration: $defaultDuration;
-            transition-property: transform;
-
-            @include hideTapHighlightColor();
-            @include hardwareAccel();
-            @include improveAntiAlias();
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        }
-
-    </style>
-    <style>
-        .text p {
-            color: palegoldenrod;
-        }
-
-        .text h1 {
-            position: relative;
-            font-size: 5em;
-            color: palegoldenrod;
-            letter-spacing: 0.0625em;
-            animation: drop-shadows;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-fill-mode: both;
-        }
-
-        @keyframes drop-shadows {
-            0% {
-                text-shadow: -1px 0 0 cadetblue, 0px 0 0 #5b989a, 0px 0 0 #5d9b9d, 0px 0 0 cadetblue;
-            }
-
-            25% {
-                text-shadow: -1px 0 0 cadetblue, -2px 0 0 #5b989a, -3px 0 0 #599596, -4px 0 0 #579193, -5px 0 0 #568e90, -6px 0 0 #548b8d, -7px 0 0 #52888a, -8px 0 0 #508586, -9px 0 0 #4e8283, -10px 0 0 #4c7e80, -11px 0 0 #4a7b7d, -12px 0 0 #48787a, -13px 0 0 #467576, -14px 0 0 #447273, -15px 0 0 #436f70, -16px 0 0 #416b6d, -17px 0 0 #3f686a, -18px 0 0 #3d6566, -19px 0 0 #3b6263, -20px 0 0 #395f60, -21px 0 0 #375c5d, -22px 0 0 #35585a, -23px 0 0 #335556, -24px 0 0 #315253, -25px 0 0 #304f50, -26px 0 0 #2e4c4d, -27px 0 0 #2c494a, -28px 0 0 #2a4646, -29px 0 0 #284243, -30px 0 0 #263f40;
-                transform: rotateY(25deg);
-            }
-
-            75% {
-                text-shadow: -1px 0 0 cadetblue, 2px 0 0 #5b989a, 3px 0 0 #599596, 4px 0 0 #579193, 5px 0 0 #568e90, 6px 0 0 #548b8d, 7px 0 0 #52888a, 8px 0 0 #508586, 9px 0 0 #4e8283, 10px 0 0 #4c7e80, 11px 0 0 #4a7b7d, 12px 0 0 #48787a, 13px 0 0 #467576, 14px 0 0 #447273, 15px 0 0 #436f70, 16px 0 0 #416b6d, 17px 0 0 #3f686a, 18px 0 0 #3d6566, 19px 0 0 #3b6263, 20px 0 0 #395f60, 21px 0 0 #375c5d, 22px 0 0 #35585a, 23px 0 0 #335556, 24px 0 0 #315253, 25px 0 0 #304f50, 26px 0 0 #2e4c4d, 27px 0 0 #2c494a, 28px 0 0 #2a4646, 29px 0 0 #284243, 30px 0 0 #263f40;
-                transform: rotateY(-25deg);
-            }
-
-            100% {
-                text-shadow: -1px 0 0 cadetblue, 0px 0 0 #5b989a, 0px 0 0 #5d9b9d, 0px 0 0 cadetblue;
-                transform: rotateY(0deg);
-            }
-        }
-
-    </style>
-    <style>
-
-    </style>
-    <!--여기부터 -->
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=발급받은api키"></script> -->
-    <!--  https://cloud.google.com/maps-platform/ 에서 개발 api키 발급받으세요 -->
-    <script>
-        //좌표 값을 바꿔서 입력 36.3491563,127.3776857
-        function initialize() {
-            var myLatlng = new google.maps.LatLng(36.329923, 127.443575);
-            var mapOptions = {
-                zoom: 17,
-                center: myLatlng
-            }
-            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                title: '주소' //레이블을 바꿔서 입력
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
+    //원형
+        
     <style>
         body {
             background-color: #EEE;
@@ -288,13 +44,13 @@
         }
 
         .group .circular-progress60 {
-            background: linear-gradient(90deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(126deg, #FF70A6 50%, #E0E0E0 50%, #E0E0E0);
+            background: linear-gradient(90deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(270deg, #FF70A6 50%, #E0E0E0 50%, #E0E0E0);
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            height: 150px;
+            height: 200px;
             margin: 2em auto;
             position: relative;
-            min-width: 150px;
+            min-width: 200px;
             margin: 10px;
             transition: all .3s linear;
         }
@@ -304,12 +60,12 @@
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
             color: rgba(0, 0, 0, 0.54);
-            content: "10%";
-            font-size: 60px;
+            content: "60%";
+            font-size: 72px;
             font-weight: bold;
             height: 100%;
             left: 0;
-            line-height: 150px;
+            line-height: 200px;
             position: absolute;
             text-align: center;
             top: 0;
@@ -323,7 +79,7 @@
         }
 
         .group .circular-progress73 {
-            background: linear-gradient(-7.2deg, #FF9770 50%, transparent 50%, transparent), linear-gradient(270deg, #FF9770 50%, #E0E0E0 50%, #E0E0E0);
+            background: linear-gradient(30deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(180deg, #FF70A6 50%, #E0E0E0 50%, #E0E0E0);
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
             height: 200px;
@@ -340,7 +96,7 @@
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
             color: rgba(0, 0, 0, 0.54);
             content: "73%";
-            font-size: 60px;
+            font-size: 72px;
             font-weight: bold;
             height: 100%;
             left: 0;
@@ -358,13 +114,13 @@
         }
 
         .group .circular-progress75 {
-            background: linear-gradient(0deg, #FF9770 50%, transparent 50%, transparent), linear-gradient(270deg, #FF9770 50%, #E0E0E0 50%, #E0E0E0);
+            background: linear-gradient(-95deg, #FF9770 50%, transparent 50%, transparent), linear-gradient(-95deg, #FF9770 50%, #E0E0E0 50%, #E0E0E0);
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            height: 150px;
+            height: 200px;
             margin: 2em auto;
             position: relative;
-            min-width: 150px;
+            min-width: 200px;
             margin: 10px;
             transition: all .3s linear;
         }
@@ -374,12 +130,12 @@
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
             color: rgba(0, 0, 0, 0.54);
-            content: "75%";
-            font-size: 60px;
+            content: "55%";
+            font-size: 72px;
             font-weight: bold;
             height: 100%;
             left: 0;
-            line-height: 150px;
+            line-height: 200px;
             position: absolute;
             text-align: center;
             top: 0;
@@ -393,13 +149,13 @@
         }
 
         .group .circular-progress85 {
-            background: linear-gradient(36deg, #70D6FF 50%, transparent 50%, transparent), linear-gradient(270deg, #70D6FF 50%, #E0E0E0 50%, #E0E0E0);
+            background: linear-gradient(-90deg, RED 50%, transparent 50%, transparent), linear-gradient(-90deg, red 50%, #E0E0E0 50%, #E0E0E0);
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            height: 150px;
+            height: 200px;
             margin: 2em auto;
             position: relative;
-            min-width: 150px;
+            min-width: 200px;
             margin: 10px;
             transition: all .3s linear;
         }
@@ -409,12 +165,12 @@
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
             color: rgba(0, 0, 0, 0.54);
-            content: "85%";
-            font-size: 60px;
+            content: "60%";
+            font-size: 72px;
             font-weight: bold;
             height: 100%;
             left: 0;
-            line-height: 150px;
+            line-height: 200px;
             position: absolute;
             text-align: center;
             top: 0;
@@ -428,13 +184,13 @@
         }
 
         .group .circular-progress90 {
-            background: linear-gradient(54deg, #70D6FF 50%, transparent 50%, transparent), linear-gradient(270deg, #70D6FF 50%, #E0E0E0 50%, #E0E0E0);
+            background: linear-gradient(270deg, #70D6FF 50%, transparent 50%, transparent), linear-gradient(-90deg, #70D6FF 50%, white 50%, #E0E0E0);
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            height: 150px;
+            height: 200px;
             margin: 2em auto;
             position: relative;
-            min-width: 150px;
+            min-width: 200px;
             margin: 10px;
             transition: all .3s linear;
         }
@@ -444,12 +200,12 @@
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
             color: rgba(0, 0, 0, 0.54);
-            content: "90%";
-            font-size: 60px;
+            content: "55%";
+            font-size: 72px;
             font-weight: bold;
             height: 100%;
             left: 0;
-            line-height: 150px;
+            line-height: 200px;
             position: absolute;
             text-align: center;
             top: 0;
@@ -463,13 +219,13 @@
         }
 
         .group .circular-progress100 {
-            background: linear-gradient(90deg, #C8E9A0 50%, transparent 50%, transparent), linear-gradient(270deg, #C8E9A0 50%, #E0E0E0 50%, #E0E0E0);
-            border-radius: 50%;
+            background: linear-gradient(-100deg, #C8E9A0 50%, transparent 50%, transparent), linear-gradient(270deg, #C8E9A0 50%, #E0E0E0 50%, #E0E0E0);
+            border-radius: 60%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            height: 150px;
+            height: 200px;
             margin: 2em auto;
             position: relative;
-            min-width: 150px;
+            min-width: 200px;
             margin: 10px;
             transition: all .3s linear;
         }
@@ -479,12 +235,12 @@
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
             color: rgba(0, 0, 0, 0.54);
-            content: "100%";
-            font-size: 60px;
+            content: "60%";
+            font-size: 72px;
             font-weight: bold;
             height: 100%;
             left: 0;
-            line-height: 150px;
+            line-height: 200px;
             position: absolute;
             text-align: center;
             top: 0;
@@ -521,269 +277,806 @@
         }
 
     </style>
-    <!--4html 스킬효과-->
     <style>
-        .progress {
-            border-radius: 0;
-            overflow: visible;
+        ul# pitt.data.item4 {
+            float: left;
         }
 
-        .progress-bar {
-            background: rgb(23, 44, 60);
-            -webkit-transition: width 1.5s ease-in-out;
-            transition: width 1.5s ease-in-out;
+        ul#pitt.data.item4 {
+            margin-left: 100px;
+        }
+
+        ul#pitt.data.item4 {
+            margin-top: 100px;
         }
 
     </style>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            -ms-scroll-style: none;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .page {
+            clear: both;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .page_wrap {
+            width: 94%;
+            height: 100vh;
+            margin: 0 auto;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+
+        .page_top_btn {
+            position: fixed;
+            right: 30px;
+            bottom: 120px;
+            z-index: 999;
+            color: #fff;
+            background: #333;
+            width: 48px;
+            height: 48px;
+            border-radius: 25px;
+            line-height: 48px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+    </style>
+    <style>
+        #vs1 {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #img_box1 {
+            width: 500%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .pag {
+            position: absolute;
+            color: #ffffff;
+            font-size: 24pt;
+            width: 20%;
+            top: 0px;
+            left: 100%;
+            z-index: 10;
+            opacity: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            transition: 0.5s;
+        }
+
+        .pag.on {
+            left: 0;
+            z-index: 20;
+            opacity: 1;
+        }
+
+        #page1 {
+            background-image: url("Dark-Background-Lines-1200-X-900.jpg");
+        }
+
+        #page2 {
+            background-image: url("Dark-Background-Spots-1440-X-900.jpg");
+        }
+
+        #page3 {
+            background-image: url("Dark-Background-Lines-1200-X-900.jpg");
+        }
+
+        #page4 {
+            background-image: url("Dark-Background-Spots-1440-X-900.jpg");
+        }
+
+        #page5 {
+            background-image: url("Dark-Background-Lines-1200-X-900.jpg");
+        }
+
+        #page6 {
+            background-image: url("Dark-Background-Spots-1440-X-900.jpg");
+        }
+
+        #page7 {
+            background-image: url("Dark-Background-Lines-1200-X-900.jpg");
+        }
+
+    </style>
+    <!--스크롤-->
+    <style>
+        h1 {
+            font-size: 5em;
+            font: bold 7.5vw/1.6 'Signika', sans-serif;
+            user-select: none;
+        }
+
+        h1 span {
+            display: inline-block;
+            animation: float .2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: none;
+            }
+
+            33% {
+                transform: translateY(-1px) rotate(-2deg);
+            }
+
+            66% {
+                transform: translateY(1px) rotate(2deg);
+            }
+        }
+
+        body:hover span {
+            animation: bounce .6s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            25% {
+                transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(3deg) scale(1.1);
+            }
+        }
+
+        span:nth-child(4n) {
+            color: hsl(50, 75%, 55%);
+            text-shadow: 1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%);
+        }
+
+        span:nth-child(4n-1) {
+            color: hsl(135, 35%, 55%);
+            text-shadow: 1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%);
+        }
+
+        span:nth-child(4n-2) {
+            color: hsl(155, 35%, 60%);
+            text-shadow: 1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%);
+        }
+
+        span:nth-child(4n-3) {
+            color: hsl(30, 65%, 60%);
+            text-shadow: 1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%);
+        }
+
+        h1 span:nth-child(2) {
+            animation-delay: .05s;
+        }
+
+        h1 span:nth-child(3) {
+            animation-delay: .1s;
+        }
+
+        h1 span:nth-child(4) {
+            animation-delay: .15s;
+        }
+
+        h1 span:nth-child(5) {
+            animation-delay: .2s;
+        }
+
+        h1 span:nth-child(6) {
+            animation-delay: .25s;
+        }
+
+        h1 span:nth-child(7) {
+            animation-delay: .3s;
+        }
+
+        h1 span:nth-child(8) {
+            animation-delay: .35s;
+        }
+
+        h1 span:nth-child(9) {
+            animation-delay: .4s;
+        }
+
+        h1 span:nth-child(10) {
+            animation-delay: .45s;
+        }
+
+        h1 span:nth-child(11) {
+            animation-delay: .5s;
+        }
+
+        h1 span:nth-child(12) {
+            animation-delay: .55s;
+        }
+
+        h1 span:nth-child(13) {
+            animation-delay: .6s;
+        }
+
+        h1 span:nth-child(14) {
+            animation-delay: .65s;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script>
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip({
-                trigger: 'manual'
-            }).tooltip('show');
-        });
-        $(document).ready(function() {
-            $(".progress-bar").each(function() {
-                each_bar_width = $(this).attr('aria-valuenow');
-                $(this).width(each_bar_width + '%');
+        window.onload = function() {
+            var p = $(".page");
+            p.each(function(i) {
+                // 페이지 개별적으로 mousewheel 이벤트 적용하여 마우스 휠을 위나 아래로 스크롤시 한 페이지씩 스크롤 될 수 있도록 하되, offset(), prev(), next()를 활용할 것.
+                $(this).on("mousewheel DOMMouseScroll", function(e) {
+                    e.preventDefault(); //다른 이벤트 방지
+                    var delta = 0;
+                    if (!event) {
+                        event = window.event;
+                    } //이벤트가 감지되지 못 할 경우
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120; //한 번 스크롤 할 때의 양으로 나눔
+                        if (window.opera) {
+                            delta = -delta;
+                        } //오페라는 반대로
+                    } else if (event.detail) { //미세 스크롤량을 무력화
+                        delta = -event.detail / 3;
+                    }
+
+                    var sc_top = $(window).scrollTop();
+                    var cur = p.eq(i);
+                    if (delta < 0) { //아래로 스크롤
+                        if ($(cur).next() != undefined) {
+                            try { //예외처리:오류가 났을 경우를 대비하여 처리하는 방법
+                                sc_top = $(cur).next().offset().top; //정상처리구문
+                            } catch (e) {
+                                //정상처리구문에 오류가 있을 때 실행
+                                console.log(sc_top);
+                            }
+                        }
+                    } else { //위로 스크롤
+                        if ($(cur).prev() != undefined) {
+                            try {
+                                sc_top = $(cur).prev().offset().top;
+                            } catch (e) {
+                                console.log(sc_top);
+                            }
+                        }
+                    }
+                    $("body, html").stop().animate({
+                        "scrollTop": sc_top + "px"
+                    }, 500);
+                });
             });
-        });
-
-        // $( window ).scroll(function() {   
-        // if($( window ).scrollTop() > 10){  // scroll down abit and get the action   
-        //      $(".progress-bar").each(function(){
-        //        each_bar_width = $(this).attr('aria-valuenow');
-        //        $(this).width(each_bar_width + '%');
-        //      });
-
-        //  }  
-        // });
+        }
 
     </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //#img_box1의 해당 페이지가 fade 되면서 나타날 수 있도록 구현
+            var n = 0;
+            var len = $(".pag").length;
+            var intv = setInterval(function() {
+                n = n + 1;
+                if (n < len) {
+                    nextAni();
+                } else {
+                    n = -1;
+                    nextAni();
+                }
+            }, 3000);
+
+            function nextAni() {
+                $("#img_box1 .page").eq(n).addClass("on");
+                setTimeout(function() {
+                    $("#img_box1 .pag").eq(n).siblings().removeClass("on");
+                }, 500);
+            }
+        });
+
+    </script>
+    <style>
+        <style>
+@import url("https://fonts.googleapis.com/css?family=Muli");
+*, *:before, *:after { box-sizing:border-box; margin:0;  padding:0; }
+html, body { font-size:62.5%;  background-color:#00091B;
+  font-family:'Muli', Helvetica, sans-serif; }
+.container { position:absolute;  width:17rem;  height:10rem;
+  left:10%;  top:10%;      transform: translate(-50%, -50%); }
+.text { color: #fff; font-size:6rem;  font-weight:900;
+  display:inline-block;  position:absolute; bottom:0;
+          animation: text 1050ms ease-in infinite;
+          transform: translatez(0);  }
+.text-w { left: 0rem;
+          transform: translate3d(0, -4rem, 0);
+          animation: text-w 1050ms ease-in infinite; }
+.text-a {  left: 5.4rem;  animation-delay:150ms; }
+.text-v {  left: 7.6rem;  animation-delay:230ms; }
+.text-e {  left: 13rem;   animation-delay:310ms; }
+.coast { position:absolute;  left:1.3rem;  bottom:1.7rem;
+  width:6.2rem;  height:2.2rem;  display:inline-block;
+  animation:coast 2100ms linear infinite; transform: translateZ(0); }
+.wave-rel-wrap { position:relative;  width:100%;  height:100%;
+      perspective:3rem;          perspective-origin:0%, 50%; }
+.wave { position:absolute;  width:6.2rem;  height:2.2rem;
+  border-radius:1.1rem;
+  background:radial-gradient(ellipse at center, #74f1fc 0%, #32e6ff 73%, #15c7fa 100%);  display:inline-block;
+  animation: wave 2100ms linear infinite;
+  will-change: width;    transform:translateZ(0) scale(0); }
+.delay {  animation-delay: 1050ms; }
+
+@keyframes text {
+  0% { transform: translate3d(0, 0, 0); }
+  30% { transform: translate3d(0, 0, 0);  }
+  45% { transform: translate3d(0, -4rem, 0);  }
+  100% { transform: translate3d(0, 0, 0);  }
+}
+@keyframes text-w {
+  0% {  transform: translate3d(0, -4rem, 0); }
+  38% {  transform: translate3d(0, -4rem, 0);  }
+  69% {  transform: translate3d(0, 0, 0);  }
+  100% { transform: translate3d(0, -4rem, 0);  }
+}
+@keyframes coast {
+  0% {  transform: translate3d(0, 0, 0);  }
+  23% { transform: translate3d(0, 0, 0);  }
+  50% { transform: translate3d(16rem, 0, 0);  }
+  100% { transform: translate3d(16rem, 0, 0);  }
+}
+@keyframes wave {
+  0% { transform: scale(0);  width: 2.2rem;  }
+  10% { transform: scale(1);  }
+  23% { width: 2.2rem; }
+  32% { width: 6.1rem;  }
+  42% { width: 5rem;  transform: rotateY(0deg) scale(1, 1);  }
+  51% { transform: rotateY(90deg) scale(0.6, 0.2);  }
+  52% { transform: rotateY(90deg) scale(0);  }
+  100% { transform: rotateY(90deg) scale(0);  }
+}
+    
+    </style><!--WABE-->
+    <!--화면전환
+    -->
+    <style>
+      /*  slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+*/
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide:nth-child(1) .panel > * {
+  background: #636fee;
+  color: #7594f0;
+}
+.slide:nth-child(2) .panel > * {
+  background: #a8cb86;
+  color: #bdd194;
+}
+.slide:nth-child(3) .panel > * {
+  background: #63afee;
+  color: #75cdf0;
+}
+.slide:nth-child(4) .panel > * {
+  background: #d24b62;
+  color: #d65c5c;
+}
+.slide .center {
+  opacity: 0;
+  transition: opacity linear 300ms;
+}
+.slide .panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    overflow: hidden;
+    bottom:50vh;
+}
+.slide .top, .slide .bottom {
+  content: attr(data-back);
+  position: absolute;
+  font-size: 50vh;
+  font-weight: 800;
+  height: 50vh;
+  width: 100vw;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: -webkit-transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865);
+  transition: transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865);
+  transition: transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865), -webkit-transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865);
+}
+.slide .top:after, .slide .bottom:after {
+  position: relative;
+  display: inline-block;
+  transition: -webkit-transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865);
+  transition: transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865);
+  transition: transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865), -webkit-transform 600ms cubic-bezier(1, 0.005, 0.57, 0.865);
+  content: attr(data-back);
+  font-family: "BenchNine", sans-serif;
+}
+.slide .top {
+  line-height: 100vh;
+  -webkit-transform: translatey(-50vh);
+          transform: translatey(-50vh);
+}
+.slide .top:after {
+  -webkit-transform: translatey(50vh);
+          transform: translatey(50vh);
+}
+.slide .bottom {
+  bottom: 0;
+  line-height: 0vh;
+  -webkit-transform: translatey(/*50vh*/60vh);
+          transform: translatey(60vh);
+}
+.slide .bottom:after {
+  -webkit-transform: translatey(-60vh);
+          transform: translatey(-60vh);
+
+}
+.slide.active .center {
+  opacity: 1;
+  transition: opacity linear 300ms;
+  transition-delay: 600ms;
+}
+.slide.active .top, .slide.active .bottom {
+  transition: none;
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+  z-index: -1;
+}
+.slide.active .top:after, .slide.active .bottom:after {
+  transition: -webkit-transform cubic-bezier(0.23, 1, 0.32, 1) 1200ms;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 1200ms;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 1200ms, -webkit-transform cubic-bezier(0.23, 1, 0.32, 1) 1200ms;
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  z-index: 2;
+  text-align: center;
+}
+.center h1 {
+  font-size: 10vh;
+  line-height: 1;
+  font-family: "BenchNine", sans-serif;
+}
+
+.sig {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
+}
+    </style>
+
+    <!--화면전환-->
+  
+    <script>
+$(document).on('click',nextSlide);
+
+function nextSlide(){
+  console.log($('.active + .slide').length);
+  if ($('.active + .slide').length > 0){
+    $('.active + .slide').addClass('active');
+    $($('.active')[0]).removeClass('active');
+  } else{
+    $('.active').removeClass('active');
+    $('.slide:nth-child(1)').addClass('active');
+  }
+}
+</script><!--화면전환-->
+<style>//갤러리
+
+      body{
+    width: 100%;
+    background: #F4F4F4;
+    color: #0A304B;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+    color: #1A689F;
+  }
+  img{
+    float: left;
+    width: 32.5%;
+    margin:0.25%;
+    margin-bottom: 80px;
+    overflow: hidden;
+    display: block;
+  }
+  img:hover{
+    cursor: pointer;
+    overflow:hidden;
+  }
+  /*Light effect*/
+  .opacity-light img:hover{
+    opacity: 0.75;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  /*Blur effect*/
+  .blur img{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
+  .blur img:hover{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+
+
+  /*Colour effects*/
+  .colour-on-hover img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+  .colour-on-hover img:hover{
+    -webkit-filter: grayscale(0);
+	  filter: grayscale(0);
+  }
+  /*Black & white effects*/
+  .grey-on-hover img{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .grey-on-hover img:hover{
+    -webkit-filter: grayscale(100%);
+	  filter: grayscale(100%);
+  }
+  /*Sepia effect*/
+  .sepia-hover img {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .sepia-hover img:hover {
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
+  }
+    </style>
 </head>
 
 <body>
-
-    <!-- Header -->
-    <header id="header" class="alt">
-        <div class="logo"><a href="index.html">이름 <span>포트폴리오</span></a></div>
-        <a href="#menu">Menu</a>
-    </header>
-
-    <!-- Nav -->
-    <nav id="menu">
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">능력</a></li>
-            <li><a href="#">갤러리</a></li>
-            <li><a href="#">주소</a></li>
-        </ul>
+    <nav>
+        <div class="tnb">
+            <div class="container">
+                <div class="coast">
+                    <div class="wave-rel-wrap">
+                        <div class="wave"></div>
+                    </div>
+                </div>
+                <div class="coast delay">
+                    <div class="wave-rel-wrap">
+                        <div class="wave delay"></div>
+                    </div>
+                </div>
+                <div class="text text-w">U</div>
+                <div class="text text-a">I</div>
+                <div class="text text-v">U</div>
+                <div class="text text-e">X</div>
+            <!--    <div class="text text-">오</div>
+                <div class="text text-e">입</div>
+                <div class="text text-e">니</div>
+                <div class="text text-e">다</div>-->
+            </div>
+        </div>
     </nav>
+    <div class="slider"><!--화먄전환-->
+  <div class="slide active">
+    <div class="panel">
+      <div class="top" data-back="SAILOR"></div>
+      <div class="bottom" data-back="SAILOR"></div>
+    </div>
+    <div class="center">
+      <h1>포트폴리오</h1>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="panel">
+      <div class="top" data-back="DESERT"></div>
+      <div class="bottom" data-back="DESERT"></div>
+    </div>
+    <div class="center">
+      <h1>010-xxxx--xxxx</h1>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="panel">
+      <div class="top" data-back="WATER"></div>
+      <div class="bottom" data-back="WATER"></div>
+    </div>
+    <div class="center">
+      <h1></h1>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="panel">
+      <div class="top" data-back="SAND"></div>
+      <div class="bottom" data-back="SAND"></div>
+    </div>
+    <div class="center">
+      <h1></h1>
+    </div>
+  </div>
+</div><!--화면전환-->
+    <div class="page" id="page1">
+        <div class="page_wrap">
+            <h2 class="page_title">
+            </h2>
+            <figure class="page_pic"><img src="" alt=""></figure>
+            <ul>
 
-    <!-- Banner -->
-    <section class="banner full">
-        <article>
-            <img src="images/slide01.jpg" alt="" />
-            <div class="inner">
-                <div class="text">
-                    <h1>이의 포트폴리오</h1>
-
-                </div>
-            </div>
-        </article>
-        <article>
-            <img src="images/slide02.jpg" alt="" />
-            <div class="inner">
-                <header>
-                    <div class="container">
-                        <div class="drawsvg">
-                            <svg version="1.1" viewBox="0 0 700 300">
-                                <symbol id="fade-text">
-                                    <text x="45%" y="40%" text-anchor="middle">Introduce</text>
-                                    <text x="55%" y="60%" text-anchor="middle">to html,css</text>
-                                </symbol>
-                                <g>
-                                    <use class="stroke" xlink:href="#fade-text" />
-                                    <use class="fill" xlink:href="#fade-text" />
-                                </g>
-                            </svg>
-                        </div>
-
-                    </div>
-                </header>
-            </div>
-        </article>
-        <article>
-            <img src="images/slide03.jpg" alt="" />
-            <div class="inner">
-                <header>
-                    <div class="container">
-                        <div class="con">
-                            <h4>html</h4>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="per40">
-                                    <span>40% Complete </span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </header>
-            </div>
-        </article>
-        <article>
-            <img src="images/slide04.jpg" alt="" />
-            <div class="inner">
-                <header>
-                    <div class="container">
-
-                        <div class="con">
-                            <h4>css</h4>
-
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="per40">
-                                    <span>40% Complete </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-            </div>
-        </article>
-        <article>
-            <img src="images/slide05.jpg" alt="" />
-            <div class="inner">
-                <header>
-                    <div class="container">
-                        <div class="con">
-                            <h4>html</h4>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="per40">
-                                    <span>40% Complete </span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </header>
-            </div>
-        </article>
-    </section>
-
-    <!-- One -->
-    <section id="one" class="wrapper style2">
-        <div class="inner">
-            <div class="grid-style">
-
-                <div>
-                    <div class="box">
-                        <div class="image fit">
-                            <bagroud-img src="images/pic02.jpg" alt="" />
-
-                            <div class="content" id="content">
-
-                                <div class="content_wrap">
-                                    <section class="row" id="contact">
-                                        <h2 class="sub_title1">CONTACT</h2>
-                                        <article class="full_col h600" style="margin-bottom:50px;">
-                                            <!-- API 지도 삽입 -->
-                                            <div id="map_canvas" style="width:500px; height:300px"></div>
-                                        </article>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="box">
-                        <div class="image fit">
-                            <p>사용가능한 프로그램 <br></p>
-                        </div>
-                        <div class="content">
-                            <header class="align-center">
-                                
-                            </header>
-
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Two -->
-    <section id="two" class="wrapper style3">
-        <div class="inner">
-            <header class="align-center">
-            </header>
-        </div>
-    </section>
-
-    <!-- Three -->
-    <section id="three" class="wrapper style2">
-        <div class="inner">
-            <header class="align-center">
-                <!--dd-->
-                <div class="wrapper">
-                    <h3 align="center"><a href="#" class="effect-underline">갤러리</a></h3>
-
-                </div>
-                <div class="gallery">
-                    <div>
-                        <div class="image fit">
-                            <a href="in1"><img src="images/123.png" alt="" /></a>
-
-                        </div>
-                    </div>
-                    <div>
-                        <div class="image fit">
-                            <a href="#"><img src="images/1234.png" alt="" /></a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="image fit">
-                            <a href="#"><img src="images/t.png" alt="" /></a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="image fit">
-                            <a href="#"><img src="images/slide03.jpg" alt="" /></a>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <ul class="icons">
-
-                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
             </ul>
         </div>
-        <div class="copyright">
-            &copy;
+    </div>
+    <div class="page" id="page2">
+        <div class="page_wrap">
+            <h2 class="page_title"></h2>
+              <div class="page_wrap">
+        <h2 class="page_title">         <div class="header">
+                <h1 class="title">업무능력</h1>
+            </div>
+
+            <div class="content">
+                <div class="group">
+                    <div class="circular-progress60"></div>
+                    <div class="circular-text">포토샵</div>
+
+                </div>
+
+                <div class="group">
+                    <div class="circular-progress85"></div>
+                    <div class="circular-text">일러스트레이터</div>
+                </div>
+
+                <div class="group">
+                    <div class="circular-progress100"></div>
+                    <div class="circular-text">HTML</div>
+                </div>
+
+                <div class="group">
+                    <div class="circular-progress75"></div>
+                    <div class="circular-text">CSS</div>
+                </div>
+
+                <div class="group">
+                    <div class="circular-progress90"></div>
+                    <div class="circular-text">JQUERY</div>
+                </div>
+            </div></h2>
+        <figure class="page_pic">
+        <img src="" alt=""></figure>
+    </div>
+            <figure class="page_pic"><img src="" alt=""></figure>
+            <ul>
+
+            </ul>
         </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    </div>
+    <div class="page" id="page3" >
+        <div class="page_wrap" >
+            <h2 class="page_title"></h2>
+            <section class="page" id="page5">
+  
+        <ul class="data item5" style="margin-top: auto">
+            <li class="sepia-hover" >
+                <a href="">
+                    <img class="sepia-hover" src="t.png" alt="">
+                </a>
+            </li>
+            <li class="opacity-light" >
+                <a href="">
+                    <img class="opacity-light" src="123.PNG" alt="">
+                </a>
+            </li>
+            <li class="colour-on-hover">
+                <a href="">
+                    <img src="555.jpg"  alt="">
+                </a>
+            </li>
+            <li class="opacity-light">
+                <a href="">
+                    <img src="images%20(1).jpg" alt=""  class="opacity-light">
+                   
+                </a>
+            </li>
+            <li class="grey-on-hover">
+                <a href="">
+                    <img src="images%20(1).jpg"alt="" class="pic">
+                </a>
+            </li>
+            <li class="blur">
+                <a href="">
+                    <img src="images%20(1).jpg" alt="" class="pic">
+                </a>
+           <!-- </li>
+              <li class="it">
+                <a href="">
+                    <img class="sepia-hover" src=src="images%20(1).jpg" alt="" class="pic">
+                </a>
+            </li>
+            <li class="it">
+                <a href="">
+                    <img src="https://placehold.it/300x180/333" alt="" class="pic">
+                </a>
+            </li>
+           -->
+        </ul>
+            </section>
+            <figure class="page_pic"><img src="" alt="" style="background-repeat: no-repeat;"></figure>
+        </div>
+    </div>
+    <div class="page" id="page4">
+        <div class="page_wrap">
+            <h2 class="page_title"></h2>
+    
+  
+            <figure class="page_pic"><img src="" alt=""></figure>
+        </div>
+    </div>
+    <div class="gnb">
+        
+    </div>
 </body>
 
 </html>
